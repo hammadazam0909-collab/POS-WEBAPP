@@ -1,0 +1,44 @@
+type User @table {
+  username: String!
+  passwordHash: String!
+  role: String!
+  displayName: String
+  email: String
+}
+
+type MenuItem @table {
+  name: String!
+  price: Float!
+  category: String!
+  description: String
+  imageUrl: String
+  isAvailable: Boolean
+  prepTimeMinutes: Int
+}
+
+type Order @table {
+  orderDate: Timestamp!
+  status: String!
+  tableNumber: Int
+  customerName: String
+  totalAmount: Float
+  paymentType: String
+  placedBy: User
+}
+
+type OrderItem @table {
+  quantity: Int!
+  unitPrice: Float!
+  notes: String
+  order: Order
+  menuItem: MenuItem
+}
+
+type AnalyticsData @table {
+  date: Date!
+  totalSales: Float!
+  itemsSoldCount: Int!
+  mostPopularMenuItem: MenuItem
+  leastPopularMenuItem: MenuItem
+  averageOrderValue: Float
+}

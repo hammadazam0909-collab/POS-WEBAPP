@@ -1,0 +1,26 @@
+query ListAllMenuItems @auth(level: PUBLIC, insecureReason: "This operation is safe to expose to the public as it only lists available menu items.") {
+  menuItems {
+    id
+    name
+    description
+    price
+    category
+    isAvailable
+    prepTimeMinutes
+    imageUrl
+  }
+}
+
+mutation CreateNewOrder($orderDate: Timestamp!, $status: String!, $totalAmount: Float!, $paymentType: String!, $tableNumber: Int, $customerName: String) @auth(level: USER) {
+  order_insert(data: {
+    orderDate: $orderDate,
+    status: $status,
+    totalAmount: $totalAmount,
+    paymentType: $paymentType,
+    tableNumber: $tableNumber,
+    customerName: $customerName,
+    placedById_expr: "auth.uid"
+  }) {
+    id
+  }
+}

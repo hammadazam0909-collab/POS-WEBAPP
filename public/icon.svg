@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="100" fill="#0f172a"/>
+  <!-- Stylized P with Fork -->
+  <path d="M220 140 h80 c40 0 70 30 70 70 s-30 70 -70 70 h-80 v120" fill="none" stroke="#10b981" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Fork tines inside P -->
+  <path d="M220 140 v40 M250 140 v40 M280 140 v40" stroke="#10b981" stroke-width="16" stroke-linecap="round"/>
+</svg>
