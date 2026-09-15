@@ -2,26 +2,27 @@
 
 A modern, full-stack Point of Sale (POS) web application built with **React**, **Vite**, and **Firebase**. Designed for restaurants and retail businesses with multi-role management (Owner, Admin, Kitchen Staff), real-time order tracking, table management, takeaway/delivery processing, inventory tracking, and sales analytics.
 
+🌐 **Live Demo Website**: [https://posparrow.com/](https://posparrow.com/)
+
 ---
 
-## 🔑 Demo Account Credentials & Access Roles
+## 🌐 Live Demo & Account Credentials
 
-To test the application, use the following credentials at the login screen:
+You can test the application directly on the live website **[posparrow.com](https://posparrow.com/)** or by running it locally using the following credentials:
 
 | Role / Portal | Login Route | Field 1 | Field 2 | Field 3 / PIN |
 | :--- | :--- | :--- | :--- | :--- |
-| **Restaurant Access** | `/` | **Restaurant ID**: `rest_001` | **Password**: `123456` | — |
+| **Restaurant Login** | `/` | **Restaurant ID**: `demo` | **Password**: `demo123` | — |
 | **Owner Portal** | `/select-role` ➔ Owner | — | — | **Owner PIN**: `1234` |
 | **Kitchen Display (KDS)** | `/select-role` ➔ Kitchen | — | — | *Direct Access* |
-| **Admin Panel** | `/admin` | **Email**: `admin@arpos.com` | **Password**: `admin123` | — |
 
 ---
 
 ## 📖 How to Use
 
 ### 1. Restaurant Login
-1. Open the application (`http://localhost:5173`).
-2. Enter your **Restaurant ID** and **Password**.
+1. Open the application (**[posparrow.com](https://posparrow.com/)** or `http://localhost:5173`).
+2. Enter **Restaurant ID**: `demo` and **Password**: `demo123`.
 3. Click **🚀 Continue** to proceed to the Role Selection screen.
 
 ### 2. Kitchen Display System (KDS)
